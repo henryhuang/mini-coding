@@ -9,15 +9,17 @@ public class PlayFunGame {
 
     int numStart = 1;
     int numEnd = 100;
-    Shouter shouter = new Shouter();
 
-//    for (int i = numStart; i <= numEnd; i++) {
-//      System.out.println(shouter.shout(i));
-//    }
+    Shouter shouter = new Shouter();
+    for (int i = numStart; i <= numEnd; i++) {
+      System.out.println(shouter.shout(i));
+    }
+
+    System.out.println("=======================");
 
     Shouter shouterGen2 = new ShouterGen2();
-    for (int i = numStart; i <= numEnd; i++) {
-      System.out.println(shouterGen2.shout(i));
+    for (int j = numStart; j <= numEnd; j++) {
+      System.out.println(shouterGen2.shout(j));
     }
 
   }
