@@ -1,3 +1,3 @@
 # Mini-coding
 
-Entrance [Main.java](src/main/java/io/github/henryhuang/PlayFunGame.java).
+Entrance [PlayFunGame.java](src/main/java/io/github/henryhuang/PlayFunGame.java).
