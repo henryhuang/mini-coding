@@ -3,7 +3,7 @@ package io.github.henryhuang.rules;
 /**
  * Created by Henry Huang on 2019/6/4.
  */
-public interface Rule {
+public interface ShoutRule {
 
   /**
    * Check if the number is match this rule.

@@ -3,16 +3,15 @@ package io.github.henryhuang.rules;
 /**
  * Created by Henry Huang on 2019/6/4.
  */
-public class BuzzGen2 implements ShoutRule {
+public class Normal implements ShoutRule {
 
   @Override
   public boolean isMatched(int num) {
-    return num % 5 == 0 || String.valueOf(num).contains("5");
+    return true;
   }
 
   @Override
   public String getStringToShow(int num) {
-    return "Buzz";
+    return String.valueOf(num);
   }
-
 }

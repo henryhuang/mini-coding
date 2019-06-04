@@ -3,7 +3,7 @@ package io.github.henryhuang.rules;
 /**
  * Created by Henry Huang on 2019/6/4.
  */
-public class FizzGen2 implements Rule {
+public class FizzGen2 implements ShoutRule {
 
   @Override
   public boolean isMatched(int num) {

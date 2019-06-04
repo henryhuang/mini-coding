@@ -1,22 +1,22 @@
 package io.github.henryhuang.rules;
 
 /**
- * To apply multiple rules.
+ * To apply multiple shoutRules.
  *
  * Created by Henry Huang on 2019/6/4.
  */
-public class MultiRules implements Rule {
+public class MultiRules implements ShoutRule {
 
-  private Rule[] rules;
+  private ShoutRule[] shoutRules;
 
-  public MultiRules(Rule... rules) {
-    this.rules = rules;
+  public MultiRules(ShoutRule... shoutRules) {
+    this.shoutRules = shoutRules;
   }
 
   @Override
   public boolean isMatched(int num) {
-    for (Rule rule : rules) {
-      if (!rule.isMatched(num)) {
+    for (ShoutRule shoutRule : shoutRules) {
+      if (!shoutRule.isMatched(num)) {
         return false;
       }
     }
@@ -26,9 +26,9 @@ public class MultiRules implements Rule {
   @Override
   public String getStringToShow(int num) {
     StringBuilder sb = new StringBuilder();
-    for (Rule rule : rules) {
-      if (rule.isMatched(num)) {
-        sb.append(rule.getStringToShow(num));
+    for (ShoutRule shoutRule : shoutRules) {
+      if (shoutRule.isMatched(num)) {
+        sb.append(shoutRule.getStringToShow(num));
       }
     }
     return sb.toString();
